@@ -1262,8 +1262,18 @@
         <div class="thirty"></div>
         <div class="thirty"></div>
     </div>
-    <audio autoplay>
+    <audio id="backgroundMusic" loop>
         <source src="Super Mario Ringtone Download.mp3" type="audio/mp3">
     </audio> 
 </body>
 </html>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    // Get the audio element
+    var audio = document.getElementById("backgroundMusic");
+
+    // Play the audio
+    audio.play();
+});
+
+</script>
